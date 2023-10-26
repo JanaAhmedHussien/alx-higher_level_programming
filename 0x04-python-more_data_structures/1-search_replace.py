@@ -1,7 +1,4 @@
 #!/usr/bin/python3
-def square_matrix_simple(matrix=[]):
-    response = []
-    for row in matrix:
-        sub_matrix = map(lambda num: num**2, row)
-        response.append(list(sub_matrix))
+def search_replace(my_list, search, replace):
+    response = [num if num != search else replace for num in my_list]
     return response
